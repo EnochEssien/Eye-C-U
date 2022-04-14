@@ -1,0 +1,97 @@
+
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  background: #000;
+}
+h1{
+  text-align: center;
+  align-items: center;
+  position: relative;
+  left: 25%;
+  transform: translate(0%, 75%);
+  font-size: 1.25rem;
+  color: white;
+  opacity: 0.9;
+
+  width: 50%;
+
+}
+h2{
+    text-align: center;
+align-items: center;
+    color: white;
+    opacity: 0.9;
+    font-size: 1rem;
+    position: relative;
+
+    transform: translate(0%, 2500%);
+}
+p {
+  font-weight: 700;
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: Hack, sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 5s linear infinite;
+  position: relative;
+
+
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}
+
+
+
+label {
+	display: block;
+	width: 60vw;
+	max-width: 300px;
+	margin: 0 auto;
+	background-color: slateblue;
+	border-radius: 2px;
+	font-size: 1em;
+	line-height: 2.5em;
+	text-align: center;
+  position: relative;
+  transform: translate(0%, 750%);
+}
+
+label:hover {
+	background-color: white;
+}
+
+button{
+  position: relative;
+  left: 47.5%;
+  transform: translate(0%, 900%);
+}
+
+input {
+	border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
