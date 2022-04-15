@@ -1,11 +1,9 @@
 import cv2
 import sys
-
-
-# Importing Image module from PIL package
-from PIL import Image
 import PIL
+from PIL import Image
 
+""" So for this code the red box around the mouth or eyes of the individual signifies that the detector registers a "smile" in the image. """
 
 
 
@@ -16,7 +14,7 @@ smile_cascade = cv2.CascadeClassifier('haarcascade_smile.xml')
 
 #faces  = face_cascade.detectMultiScale(gray, 1.3, 5)
 
-
+#Detection function
 def detect(gray, image):
     faces = face_cascade.detectMultiScale(gray, 1.3, 5)
     for (x, y, w, h) in faces:
@@ -29,10 +27,15 @@ def detect(gray, image):
             cv2.rectangle(roi_color, (sx, sy), ((sx + sw), (sy + sh)), (0, 0, 255), 2)
     return image
 
-pic = sys.argv[1]
 
-image = cv2.imread( pic )
+#Comment this in when code is altered for use in website
+""" pic = sys.argv[1]
+image = cv2.imread( pic ) """
 
+
+#Comment this out when code is altered for use in website
+#Aslo change the image name depending on which image is being used
+image = cv2.imread("Pictures\smile.jpg")
 
 # To capture image in monochrome
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -40,15 +43,15 @@ gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 # calls the detect() function
 canvas = detect(gray, image)
 
+#Comment this out when code is altered for use in website
+cv2.imshow("smile",canvas)
+
+#Comment this in when code is altered for use in website
+"""cv2.imwrite(pic,canvas)"""
+
+cv2.waitKey(0)
 
 
 
-# creating a image object (main image)
-
-
-cv2.imwrite(pic,canvas)
-# save a image using extension
-
-# Release the capture once all the processing is done.
 
 
