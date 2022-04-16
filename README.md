@@ -6,7 +6,7 @@ However it is still possible to test the object detector individually.
 Firstly one would have to download the code from this github repository. 
 Next install python and opencv, instructions here, https://www.python.org/downloads/ and https://pypi.org/project/opencv-python/
 
-Next comment follow the comments found in the "main.py"
+Next follow the instructions found in the comments found in the "main.py"
 , it should already be setup for test as is. 
 ![image](https://user-images.githubusercontent.com/91120304/163655031-30aafc2a-08aa-4ab6-b6a0-09926e557af6.png)
 
