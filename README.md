@@ -7,8 +7,9 @@ Firstly one would have to download the code from this github repository.
 Next install python and opencv, instructions here, https://www.python.org/downloads/ and https://pypi.org/project/opencv-python/
 
 Next follow the instructions found in the comments found in the "main.py"
-, it should already be setup for test as is. 
-![image](https://user-images.githubusercontent.com/91120304/163655031-30aafc2a-08aa-4ab6-b6a0-09926e557af6.png)
+, it should already be setup for test as is. All one would have to do is put the image in question in the "pictures" folder and then change the image name highlighted to the one which would be tested. 
+![image](https://user-images.githubusercontent.com/91120304/163656137-fb2fbc10-cf86-4c22-bab7-9f268c89e10b.png)
+
 
 
 
