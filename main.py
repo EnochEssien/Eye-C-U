@@ -29,13 +29,13 @@ def detect(gray, image):
 
 
 #Comment this in when code is altered for use in website
-""" pic = sys.argv[1]
-image = cv2.imread( pic ) """
+pic = sys.argv[1]
+image = cv2.imread( pic )
 
 
 #Comment this out when code is altered for use in website
 #Aslo change the image name depending on which image is being used
-image = cv2.imread("Pictures\smile.jpg")
+"""image = cv2.imread("Pictures\smile.jpg")"""
 
 # To capture image in monochrome
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -44,12 +44,13 @@ gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 canvas = detect(gray, image)
 
 #Comment this out when code is altered for use in website
-cv2.imshow("smile",canvas)
+"""cv2.imshow("smile",canvas)"""
 
 #Comment this in when code is altered for use in website
-"""cv2.imwrite(pic,canvas)"""
+cv2.imwrite(pic,canvas)
 
-cv2.waitKey(0)
+#Comment this out when code is altered for use in website
+"""cv2.waitKey(0)"""
 
 
 
